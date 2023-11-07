@@ -1,0 +1,36 @@
+/*
+( тут можно нормально пользоватья текстом, но цифрами, по типу 1+1, неполучиться нормально работать )
+Лексика этой программы (писать этото текст в функции "void main(){   }" ):
+
+print("Тескт") - выводит слово "Текст";
+input("Текст") - выводит слово "Текст" и просит ввести что-то;
+print(inp) - выводит то, что была введено перед этой командой;
+print("Тескт" + inp) - выводит слово "Текст" и то, что была введено перед этой командой.
+*/
+#include <iostream>
+
+using namespace std;
+std::string inp;
+
+void print(string print) {
+    cout << print << endl;
+}
+
+void input(string inputt) {
+    cout << inputt;
+    cin >> inp;
+}
+
+void main() {
+    
+    input("What's u name? ");
+
+    print("");
+    print("Hello " + inp);
+    print("");
+
+    input("What's up? ");
+
+    print("");
+    print(inp + "? Nice!!!");
+}
